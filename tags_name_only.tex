@@ -1,0 +1,44 @@
+% use the corresponding paper size for your ticket definition
+\documentclass[a4paper,10pt]{letter}
+
+% load ticket.sty with the appropriate ticket definition
+\usepackage[freepin,crossmark]{ticket}
+\usepackage[a4paper, left=23mm, top=16mm]{geometry}
+
+\unitlength=1mm
+\ticketSize{90}{56}
+\ticketDistance{0}{0}
+
+% load misc stuff
+\usepackage{graphicx}
+\usepackage{datatool}
+\usepackage[utf8]{inputenc}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% make your default ticket. \ticketdefault is somewhat like a background
+\renewcommand{\ticketdefault}{%
+  \put(45,  20){\makebox[0mm]{\includegraphics[width=13mm]{logo}}}
+  \put(45,  13){\makebox[0mm]{\small LSFE}}
+  \put(45,  9){\makebox[0mm]{\small ABC Event 2019}}
+}
+
+% now what do you like to put in your ticket 
+\newcommand{\confpin}[2]{\ticket{%
+    \put(45,40){\makebox[0mm]{\bfseries\LARGE #1}}
+% \put(46,34){\makebox[0mm]{\large #2}}%
+}}
+
+
+%% the pins for the partipiciants ...
+\begin{document}
+\DTLloaddb{list}{event.csv}
+\sffamily
+\DTLforeach{list}{%
+%%\firstname=Name,\org=Organization}{%
+%%    \confpin{\firstname}{\org}
+\firstname=Name,\org=Organization}{%
+    \confpin{\firstname}{\org}
+}
+\end{document}
