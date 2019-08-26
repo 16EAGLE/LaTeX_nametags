@@ -1,6 +1,6 @@
 # LSFE_nametags
 
-## Usage
+### Usage
 
 Download the full repository to a folder of your choice, then edit `event.csv` to add names and organizations that should appear on the nametags. Use a LaTeX distribution of your choice to compile one of the two inlcuded `.tex` files to PDF:
 
@@ -9,8 +9,7 @@ Download the full repository to a folder of your choice, then edit `event.csv` t
 
 Print the PDF to A4 and use a hand-operated shearing tool of your choice to cut nametags out of the sheet :-)
 
-## Appearance
+### Appearance
 
-<p align="center"><img width="30%" src="https://raw.githubusercontent.com/16EAGLE/LSFE_nametags/master/tags_name_only.png"></p>
-<p align="center"><img width="30%" src="https://raw.githubusercontent.com/16EAGLE/LSFE_nametags/master/tags_with_org.png"></p>
-
+<img width="30%" src="https://raw.githubusercontent.com/16EAGLE/LSFE_nametags/master/tags_name_only.png">
+<img width="30%" src="https://raw.githubusercontent.com/16EAGLE/LSFE_nametags/master/tags_with_org.png">
