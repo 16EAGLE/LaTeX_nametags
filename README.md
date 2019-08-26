@@ -13,3 +13,5 @@ Print the PDF to A4 and use a hand-operated shearing tool of your choice to cut 
 
 <img width="30%" src="https://raw.githubusercontent.com/16EAGLE/LSFE_nametags/master/tags_name_only.png">
 <img width="30%" src="https://raw.githubusercontent.com/16EAGLE/LSFE_nametags/master/tags_with_org.png">
+
+![tags_name_only](tags_name_only.png "tags_name_only") ![tags_with_org](tags_with_org.png "tags_with_org")
